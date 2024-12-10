@@ -1,0 +1,889 @@
+/*Style des balises*/
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: pink;
+    overflow-wrap: anywhere;
+}
+header {
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    color: pink;
+    top: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+section {
+    border-radius: 15px;
+    margin: 0;
+    display: flex;
+    flex-grow: 0;
+    scroll-margin-top: 50px;
+}
+div, button {
+    font-family: Arial Narrow, sans-serif;
+}
+footer {
+    display: flex; 
+    bottom: 0; 
+    width: 100%;
+    margin: 0;
+    background-color: pink;
+}
+small{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+}
+h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+}
+h3{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial Narrow, sans-serif;
+}
+::placeholder {
+    font-style: italic;
+    font-family: Arial, sans-serif;
+}
+
+/*Style de l'en-tête*/
+#conteneurentete {
+    margin-right: 30px;
+    display: flex;
+    gap: 10px;
+    list-style-type:none;
+}
+.enteteLien {
+    color: pink;
+}
+#menu {
+    display: none;
+}
+
+
+/*Style de la section d'acceuil*/
+#acceuil{
+    display: flex;
+    color: aliceblue;
+    background-color: pink;
+    height: 100vh ;
+    background-image: url(images/fond.jpg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-blend-mode: multiply;
+    justify-content: center;
+    flex-direction: column;
+}
+#acceuilInfoConteneur {
+    margin-left: 60px;
+    display: flex;
+    width: 370px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    position: sticky;
+}
+.titreAcceuil{
+    color: aliceblue;
+}
+#conteneurCroix {
+    margin-top: 50px;
+    display: flex;
+    height: 90px;
+    width: 90px;
+}
+#croixConteneurUn, #croixConteneurDeux, #croixConteneurTrois {
+    display: flex;
+    flex-direction: row;
+}
+.carreRose, .carreBlanc {
+    width: 30px;
+    height: 30px;
+}
+.carreBlanc {
+    background-color: aliceblue;
+}
+
+
+/*Style de la section à propos*/
+#apropos{
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+#conteneurFondApropos {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#fondApropos {
+    width: 621px;
+    height: 466px;
+    background-color: black;
+    background-image: url(images/fond_deux.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    border-radius: 100%;
+}
+#aproposConteneurDroite {
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    width: 50%;
+    padding-right: 20px;
+    justify-content: center;
+    gap: 30px;
+}
+#aproposTitres {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+#aproposTitreUn{
+    margin: 0;        
+ 
+}
+#aproposTitreDeux{
+    margin: 0;
+}
+#aproposTexte {
+    display: flex;
+}
+#conteneurBarreProgression {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+#barreProgressionConteneurUn, #barreProgressionConteneurDeux, #barreProgressionConteneurTrois {
+    display: flex;
+    width: 100%;
+    height: 25px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+#barreProgressionInterieurUn, #barreProgressionInterieurDeux, #barreProgressionInterieurTrois {
+    display: flex;
+    background-color: pink;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: black;
+}
+#barreProgressionInterieurUn {
+    width: 90%;
+}
+#barreProgressionInterieurDeux {
+    width: 80%;
+}
+#barreProgressionInterieurTrois {
+    width: 75%;
+}
+#aproposBoutonsConteneur {
+    display: flex;
+    gap: 15px;
+}
+.aproposBoutons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: aliceblue;
+}
+
+
+/*Style de la section services*/
+#servicesSection{
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+}
+#titreService {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#serviceConteneurUn{
+    display: flex ;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.serviceConteneurDeux {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 25vw;
+    height: 35vh;
+    background-color: aqua;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.services:hover {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.5);
+}
+.servicesIcones {
+    width: 50px;
+    height: 50px;
+}
+.paragrapheServices {
+    width: 80%;
+}
+
+
+/*Style de la section portfolio*/
+#portfolio{
+    height: 100vh;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    display: flex;
+}
+#portfolioTitre {
+    color: aliceblue;
+    display: flex;
+}
+#themeConteneur {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    color: aliceblue;
+}
+#travailImagesConteneur {
+    display: flex;
+    width: 760px;
+    height: 505px;
+    gap: 5px;
+    overflow: hidden;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+.portfolioImg {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+
+
+/*Style de la section testimonial*/
+#testimonial{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#temoignageConteneurPrincipal{
+    margin: 0;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    justify-content: space-between;
+
+}
+#temoignageTitreConteneur {
+    display: flex;
+}
+#temoignageConteneurContenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65vw;
+    gap: 6vh;
+}
+#temoignageIconeConteneur {
+    display: flex;
+}
+#temoignageIcone {
+    width: 50px;
+    height: 50px;
+}
+#temoignageDescription {
+    display: flex;
+    display: flex;
+    text-align: center;
+}
+#temoin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+#temoignageBoutton {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+#boutonUn, #boutonDeux, #boutonTrois {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px dashed black;
+}
+#ConteneurStat {
+    display: flex;
+    height: 35vh;
+    background-color: aliceblue;
+    align-self: stretch;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+.faitAccompli {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.iconeFaitAccompli {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*Style de la section blog*/
+#blog{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15vh;
+    padding-bottom: 5vh;
+    padding-top: 4vh;
+}
+#titreBlogConteneur {
+    display: flex;
+    color: aliceblue;
+}
+#conteneurBlocBlogGlobal {
+    display: flex;
+    gap: 5vw;
+}
+.blocBlogConteneur {
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 15px;
+    flex-direction: column;
+    width: 20vw;
+    height: 60vh;
+    gap: 12px;
+}
+.blocBlogConteneur:hover {
+    transform: scale(1, 1.1);
+    transition: transform 0.3s ease;
+    transform-origin: top;
+}
+.imagesBlog  {
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin-bottom: 25px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.blocBlogTitre {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#enSavoirPlusUn, #enSavoirPlusDeux, #enSavoirPlusTrois {
+    margin-top: auto;
+    margin-bottom: 40px;
+}
+#conteneurBoutonBlog {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.boutonBlog {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border: 1px dashed black;
+}
+
+
+
+
+
+
+
+/*Style de la section contact*/
+#contact{
+    display: flex;
+    height: 100vh;
+    background-color: pink;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#titreContacts {
+
+}
+
+
+
+#coordonneesConteneurPrincipal {
+    display: flex;
+    width: 70vw;
+    justify-content: space-around;
+}
+.coordonneesConteneur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+}
+.iconeCoordonnes {
+    width: 50px;
+    height: 50px;
+}
+.coordonneesTitre {
+
+}
+.coordonnees {
+
+}
+
+
+
+#formulaireConteneur {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70vw;
+    align-items: center;
+}
+#premiereLigneConteneur {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#name, #email {
+    width: 33.3vw;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    border: none;
+}
+#name {
+    margin-right: 5px;
+}
+#name:hover, #email:hover, #name:focus, #email:focus {
+    border: 2px solid black;
+}
+#message {
+    height: 200px;
+    border-radius: 5px;
+    resize: vertical;
+    background-color: aliceblue;
+    border: none;
+    width: 96%;
+}
+#message:hover, #message:focus {
+    border: 2px solid black;
+}
+#soumettre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+}
+#soumettre:hover, #soumettre:active {
+    border: 2px solid black;
+}
+
+
+
+/*Adaptation aux petits écrans portraits*/
+@media (max-width: 1000px) {
+    section {
+        overflow: hidden;
+    }
+
+    /*En tête*/
+    .enteteLien {
+    display: none;
+    }
+    #menu {
+        position: absolute; /* Positionnement absolu */
+        right: 6%;  /* Colle l'icône à 10px du côté droit */
+        top: 50%;     /* Place l'élément au centre verticalement */
+        transform: translateY(-50%); /* Centrage vertical */
+        width: 30px;  /* Taille de l'icône */
+        display: block;
+    }
+
+
+    /*Accueil*/
+    #acceuil{
+            margin-top: 25px;
+            background-position-x: center;
+            background-position-y: 70%;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;    }
+    #acceuilInfoConteneur {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    #conteneurCroix {
+    margin-top: 15px;
+    }
+
+
+    /*À propos*/
+    #apropos{
+    height: 150vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15vh;
+    }
+    #conteneurFondApropos {
+        width: auto;
+        height: auto;
+    }
+    #fondApropos {
+    width: 290px;
+    height: 217px;
+    background-image: url(images/fond_deux_petit.jpg);
+    }
+    #aproposConteneurDroite {
+        width: 70vw;
+    }
+
+
+    /*Services*/
+    #servicesSection {
+        height: 270vh;
+        gap: 50px;
+    }
+    .services {
+        width: 80vw;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.5);
+    }
+    .serviceConteneurDeux {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+
+    /*Portfolio*/
+    #portfolio {
+        height: 280vh;
+
+    }
+    #travailImagesConteneur {
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 5vh;
+        width: 90vw;
+        height: auto;
+        border-radius: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolioImg {
+        border-radius: 5px;
+    }
+
+
+    /*Témoignages*/
+    #testimonial {
+        height: 150vh;
+    }
+    #ConteneurStat {
+        flex-direction: column;
+        display: flex;
+        height: 80vh;
+        background-color: aliceblue;
+        align-self: stretch;
+        margin-top: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 10vw;
+    }
+
+
+    /*Blog*/
+    #blog {
+        gap: 12vh;
+    }
+    .disparaitre {
+        display: none;
+    }
+    .blocBlogConteneur {
+        width: 80vw;
+        height: 60vh;
+    }
+
+
+
+
+    /*Contacts*/
+    #contact {
+        height: 115vh;
+    }
+    #coordonneesConteneurPrincipal {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #premiereLigneConteneur {
+        flex-direction: column;
+        align-items: center;
+    }
+    #name, #email {
+        width: 80vw;
+    }
+    #name {
+        margin-bottom: 7px;
+    }
+    #message {
+        width: 80vw;
+    }
+}
+
+
+
+/*Petits écrans orientés paysage*/
+@media (max-width: 1000px) and (orientation: landscape) {
+        section {
+        overflow: hidden;
+        }
+
+        /*En tête*/
+        .enteteLien {
+        display: none;
+        }
+        #menu {
+            position: absolute; /* Positionnement absolu */
+            right: 6%;  /* Colle l'icône à 10px du côté droit */
+            top: 50%;     /* Place l'élément au centre verticalement */
+            transform: translateY(-50%); /* Centrage vertical */
+            width: 30px;  /* Taille de l'icône */
+            display: block;
+        }
+
+
+        /*Accueil*/
+        #acceuil{
+                margin-top: 25px;
+                background-position-x: center;
+                background-position-y: 70%;
+                justify-content: flex-start;
+                align-items: center;
+                color: white;    
+                height: 200vh;
+            }
+        #acceuilInfoConteneur {
+            margin-left: 0px;
+            margin-top: 60px;
+        }
+        #conteneurCroix {
+        margin-top: 15px;
+        }
+
+
+        /*À propos*/
+        #apropos{
+        height: 200vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15vh;
+        }
+        #conteneurFondApropos {
+            width: auto;
+            height: auto;
+        }
+        #fondApropos {
+        width: 290px;
+        height: 217px;
+        background-image: url(images/fond_deux_petit.jpg);
+        }
+        #aproposConteneurDroite {
+            width: 70vw;
+        }
+
+
+        /*Services*/
+        #servicesSection {
+            height: 370vh;
+            gap: 50px;
+        }
+        .services {
+            height: 42.5vh;
+            width: 80vw;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.5);
+        }
+        .serviceConteneurDeux {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+
+        /*Portfolio*/
+        #portfolio {
+            height: 510vh;
+
+        }
+        #travailImagesConteneur {
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5vh;
+            width: 90vw;
+            height: auto;
+            border-radius: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolioImg {
+            border-radius: 5px;
+        }
+
+
+        /*Témoignages*/
+        #testimonial {
+            height: 235vh;
+        }
+        #temoignageConteneurPrincipal {
+            gap: 15px;
+        }
+        #ConteneurStat {
+            flex-direction: column;
+            display: flex;
+            height: 137vh;
+            background-color: aliceblue;
+            align-self: stretch;
+            margin-top: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 8vw;
+        }
+
+
+        /*Blog*/
+        #blog {
+            gap: 12vh;
+            height: 180vh;
+        }
+        .disparaitre {
+            display: none;
+        }
+        .blocBlogConteneur {
+            width: 80vw;
+            height: 130vh;
+        }
+
+
+
+
+        /*Contacts*/
+        #contact {
+            height: 155vh;
+            gap: 15px;
+        }
+        #coordonneesConteneurPrincipal {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        #premiereLigneConteneur {
+            flex-direction: column;
+            align-items: center;
+        }
+        #name, #email {
+            width: 80vw;
+        }
+        #name {
+            margin-bottom: 7px;
+        }
+        #message {
+            width: 80vw;
+        }
+}
