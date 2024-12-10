@@ -152,7 +152,7 @@ p {
     width: 621px;
     height: 466px;
     background-color: black;
-    background-image: url(images/fond_deux.jpg);
+    background-image: url(images/fond_deux.JPG);
     background-repeat: no-repeat;
     background-blend-mode: luminosity;
     border-radius: 100%;
@@ -628,7 +628,7 @@ p {
     #fondApropos {
     width: 290px;
     height: 217px;
-    background-image: url(images/fond_deux_petit.jpg);
+    background-image: url(images/fond_deux_petit.JPG);
     }
     #aproposConteneurDroite {
         width: 70vw;
@@ -783,7 +783,7 @@ p {
         #fondApropos {
         width: 290px;
         height: 217px;
-        background-image: url(images/fond_deux_petit.jpg);
+        background-image: url(images/fond_deux_petit.JPG);
         }
         #aproposConteneurDroite {
             width: 70vw;
