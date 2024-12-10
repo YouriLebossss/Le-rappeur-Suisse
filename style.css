@@ -889,7 +889,7 @@ p {
 }
 
 /*petits écrans orientés portraits*/
-@media (min-height: 1200px) {
+@media (min-height: 635px) {
         section {
         overflow: hidden;
         }
