@@ -46,6 +46,9 @@ small{
 a{
     text-decoration: none;
 }
+button {
+    color: black;
+}
 h1{
     margin: 0;
     padding: 0;
@@ -731,6 +734,168 @@ p {
 
 /*Petits écrans orientés paysage*/
 @media (max-width: 1000px) and (orientation: landscape) {
+        section {
+        overflow: hidden;
+        }
+
+        /*En tête*/
+        .enteteLien {
+        display: none;
+        }
+        #menu {
+            position: absolute; /* Positionnement absolu */
+            right: 6%;  /* Colle l'icône à 10px du côté droit */
+            top: 50%;     /* Place l'élément au centre verticalement */
+            transform: translateY(-50%); /* Centrage vertical */
+            width: 30px;  /* Taille de l'icône */
+            display: block;
+        }
+
+
+        /*Accueil*/
+        #acceuil{
+                margin-top: 25px;
+                background-position-x: center;
+                background-position-y: 70%;
+                justify-content: flex-start;
+                align-items: center;
+                color: white;    
+                height: 200vh;
+            }
+        #acceuilInfoConteneur {
+            margin-left: 0px;
+            margin-top: 60px;
+        }
+        #conteneurCroix {
+        margin-top: 15px;
+        }
+
+
+        /*À propos*/
+        #apropos{
+        height: 200vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15vh;
+        }
+        #conteneurFondApropos {
+            width: auto;
+            height: auto;
+        }
+        #fondApropos {
+        width: 290px;
+        height: 217px;
+        background-image: url(images/fond_deux_petit.JPG);
+        }
+        #aproposConteneurDroite {
+            width: 70vw;
+        }
+
+
+        /*Services*/
+        #servicesSection {
+            height: 370vh;
+            gap: 50px;
+        }
+        .services {
+            height: 42.5vh;
+            width: 80vw;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), -2px -2px 5px rgba(255, 255, 255, 0.5);
+        }
+        .serviceConteneurDeux {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+
+        /*Portfolio*/
+        #portfolio {
+            height: 510vh;
+
+        }
+        #travailImagesConteneur {
+            flex-wrap: wrap;
+            flex-direction: column;
+            gap: 5vh;
+            width: 90vw;
+            height: auto;
+            border-radius: 0;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolioImg {
+            border-radius: 5px;
+        }
+
+
+        /*Témoignages*/
+        #testimonial {
+            height: 235vh;
+        }
+        #temoignageConteneurPrincipal {
+            gap: 15px;
+        }
+        #ConteneurStat {
+            flex-direction: column;
+            display: flex;
+            height: 137vh;
+            background-color: aliceblue;
+            align-self: stretch;
+            margin-top: auto;
+            justify-content: center;
+            align-items: center;
+            gap: 8vw;
+        }
+
+
+        /*Blog*/
+        #blog {
+            gap: 12vh;
+            height: 180vh;
+        }
+        .disparaitre {
+            display: none;
+        }
+        .blocBlogConteneur {
+            width: 80vw;
+            height: 130vh;
+        }
+
+
+
+
+        /*Contacts*/
+        #contact {
+            height: 155vh;
+            gap: 15px;
+        }
+        #coordonneesConteneurPrincipal {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        #premiereLigneConteneur {
+            flex-direction: column;
+            align-items: center;
+        }
+        #name, #email {
+            width: 80vw;
+        }
+        #name {
+            margin-bottom: 7px;
+        }
+        #message {
+            width: 80vw;
+        }
+}
+
+
+
+
+/*petits écrans orientés portraits*/
+@media (max-height: 640px) {
         section {
         overflow: hidden;
         }
