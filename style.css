@@ -64,9 +64,6 @@ h3{
     font-size: 15px;
     font-family: Arial, sans-serif;
 }
-button {
-    font-family: Arial Narrow, sans-serif ;
-    color ; black
 p {
     margin: 0;
     padding: 0;
@@ -890,6 +887,9 @@ p {
             width: 80vw;
         }
 }
+
+
+
 
 /*petits écrans orientés portraits*/
 @media (max-height: 640px) {
